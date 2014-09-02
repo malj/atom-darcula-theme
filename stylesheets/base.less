@@ -1,0 +1,190 @@
+@import 'colors';
+
+.editor {
+    .indent-guide {
+        box-shadow: 1px 0 inset;
+        color: @grey;
+    }
+    .wrap-guide {
+        background: @grey;
+    }
+}
+
+.item-views {
+    background: @dark-grey;
+    color: @white;
+    .selection .region {
+        background: @blue;
+    }
+    .marker .region {
+        background: @red;
+    }
+    .cursor {
+        color: @silver;
+        box-shadow: 1px 0 inset;
+    }
+}
+
+.bracket-matcher {
+    border: 1px solid @white;
+}
+
+.keyword {
+    color: @orange;
+    font-weight: bold;
+    &.operator {
+        color: @white;
+        font-weight: normal;
+        &.html,
+        &.css,
+        &.stylus,
+        &.less,
+        &.sass,
+        &.scss {
+            color: @white;
+        }
+    }
+    &.unit {
+        color: @white;
+        font-weight: normal;
+    }
+}
+
+.constant {
+    &.numeric,
+    &.rgb-value {
+        color: @cyan;
+    }
+    &.function {
+        color: @yellow;
+    }
+    &.boolean {
+        color: @orange;
+        font-weight: bold;
+    }
+}
+
+.entity {
+    &.attribute-name {
+        color: @yellow;
+        &.html {
+            color: @white;
+        }
+    }
+    &.tag {
+        color: @orange;
+        &.html {
+            color: @yellow;
+        }
+    }
+    &.function {
+        color: @yellow;
+    }
+}
+
+.support {
+    &.property-name {
+        color: @purple;
+    }
+    &.property-value {
+        color: @white;
+    }
+    &.function {
+        color: @yellow;
+    }
+    &.constant {
+        color: @yellow;
+        &.html,
+        &.css,
+        &.stylus,
+        &.less,
+        &.sass,
+        &.scss {
+            color: @white;
+        }
+    }
+    &.class {
+        color: @purple;
+    }
+}
+
+.meta {
+    &.brace {
+        color: @white;
+    }
+    &.delimiter {
+        &.object {
+            color: @orange;
+        }
+    }
+    &.tag {
+        color: @yellow;
+    }
+    &.function-call {
+        color: @purple;
+    }
+}
+
+.string {
+    color: @green;
+    &.html,
+    &.css,
+    &.stylus,
+    &.less,
+    &.sass,
+    &.scss {
+        color: @light-green;
+    }
+}
+
+.punctuation {
+    &.tag {
+        color: @yellow;
+    }
+    &.terminator {
+        color: @orange;
+        font-weight: bold;
+    }
+    &.definition {
+        &.comment {
+            color: @grey;
+        }
+        &.arguments {
+            color: @white;
+        }
+    }
+    &.separator {
+        color: @orange;
+        &.key-value {
+            color: @white;
+        }
+    }
+    &.section {
+        color: @orange;
+        &.property-list {
+            color: @white;
+        }
+        &.function.scss {
+            color: @white;
+        }
+        &.php {
+            color: @white;
+        }
+    }
+}
+
+.comment {
+    color: @grey;
+}
+
+.storage {
+    color: @orange;
+    font-weight: bold;
+}
+
+.variable {
+    color: @purple;
+    &.less {
+        color: @silver;
+    }
+}

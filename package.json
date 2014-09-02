@@ -1,0 +1,11 @@
+{
+  "name": "Darcula",
+  "theme": "syntax",
+  "version": "0.1.0 ",
+  "description": "A dark syntax theme inspired by JetBrains' IDE family (IntelliJ IDEA, PhpStorm, PyCharm, RubyMine, WebStorm, AppCode)",
+  "repository": "https://github.com/malj/atom-darcula-theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
